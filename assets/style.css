@@ -76,16 +76,14 @@ img {
   min-width: 225px;
 }
 .brand-mark {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 15px;
-  background: linear-gradient(135deg, var(--blue), var(--cyan));
   display: grid;
   place-items: center;
   color: white;
   font-weight: 900;
   font-size: 1.35rem;
-  box-shadow: 0 8px 18px #087f9830;
 }
 .brand strong {
   display: block;
