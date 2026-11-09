@@ -156,6 +156,178 @@ img {
     rgba(8, 31, 43, 0.15)
   );
 }
+
+.social-wave {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #009fe3;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    border-radius: 45%;
+    background: rgba(255,255,255,0.35);
+    animation: waveMove 8s linear infinite;
+}
+
+.wave2 {
+    top: -55px;
+    background: rgba(255,255,255,0.2);
+    animation-duration: 12s;
+}
+
+.wave3 {
+    top: -65px;
+    background: rgba(255,255,255,0.15);
+    animation-duration: 16s;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    z-index: 5;
+}
+
+.social {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s ease;
+    background: #ffffff;
+    color: #009fe3;
+}
+
+/* Floating Social Media Bar */
+.floating-social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    z-index: 9999;
+}
+
+.floating-social a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.4s ease;
+}
+
+/* Individual social media colours */
+.floating-social .facebook {
+    background: #1877F2;
+}
+
+.floating-social .whatsapp {
+    background: #25D366;
+}
+
+.floating-social .instagram {
+    background: #E1306C;
+}
+
+.floating-social .tiktok {
+    background: #000000;
+}
+
+/* Hover animation */
+.floating-social a:hover {
+    width: 65px;
+    padding-right: 8px;
+}
+
+/* Floating animation */
+@keyframes socialFloat {
+    0%, 100% {
+        margin-top: -8px;
+    }
+    50% {
+        margin-top: 8px;
+    }
+}
+
+.floating-social {
+    animation: socialFloat 3s ease-in-out infinite;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .floating-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile: Floating social icons at bottom center */
+@media (max-width: 600px) {
+    .floating-social {
+        position: fixed;
+        top: auto;
+        bottom: 15px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: max-content;
+        animation: none;
+        z-index: 99999;
+    }
+
+    .floating-social a {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    .floating-social a:hover {
+        width: 42px;
+        transform: translateY(-5px);
+        padding-right: 0;
+    }
+}
+
+
 .hero-slide.active {
   opacity: 1;
 }
@@ -302,7 +474,7 @@ img {
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow);
-}
+  background:#29404a}
 
 
 .social-logo {
@@ -683,6 +855,11 @@ img {
   border-radius: 8px;
   color: #39545d;
 }
+.notice:hover {
+    background:rgb(3, 28, 32);
+    color: white;
+}
+
 .pill {
   display: inline-block;
   padding: 5px 11px;
