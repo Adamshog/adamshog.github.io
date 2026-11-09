@@ -325,6 +325,10 @@ img {
         transform: translateY(-5px);
         padding-right: 0;
     }
+    .floating-social a:nth-child(1) {
+        animation-delay: 1.5s;
+    }
+
 }
 
 
