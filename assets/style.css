@@ -112,7 +112,7 @@ img {
   white-space: nowrap;
 }
 .nav-links a:hover,
-.nav-links a.active {
+.nav-links {
   color: var(--blue);
 }
 .nav-links .nav-cta {
@@ -607,6 +607,9 @@ img {
   width: 100%;
   object-fit: cover;
 }
+.card-body:hover {
+  background: coral;
+}
 .service-card .card-body,
 .feature-card,
 .info-card {
@@ -948,7 +951,7 @@ img {
 }
 .notice:hover {
     background:rgb(3, 28, 32);
-    color: white;
+    color:coral;
 }
 
 .pill {
