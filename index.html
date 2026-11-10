@@ -2,31 +2,29 @@
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description"
       content="AGOER Sanitary Store and Solutions - plumbing equipment, installation and water solutions in Uganda.">
-   <title>Home | AGOER Sanitary Store & Solutions</title>
+   <title>About Us | AGOER Sanitary Store & Solutions</title>
    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
    <div class="topbar">
       <div class="container"><span>Experience Elegance · Plumbing, water & sanitary solutions</span><span>Katoke: <a
-               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Nakasero: <a href="tel:+256763184269">+256763
+               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Sales: <a href="tel:+256763184269">+256763
                184269</a></span></div>
    </div>
    <header class="site-header">
       <div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark"><img
-                  src="images/AGOER-Logo-1 (2).png" style="width: 100px; height: auto;"></span><span><strong>AGOER PLUMBING
-                  SOLUTION</strong><small>Experience Elegance</small></span></a><button class="menu-toggle"
+                  src="images/AGOER-Logo-1 (2).png" style="width: 100px; height: auto;"></span><span><strong>AGOER
+                  SANITARY</strong><small>STORE & SOLUTIONS</small></span></a><button class="menu-toggle"
             aria-label="Open menu" aria-expanded="false">☰</button>
-         <nav class="nav-links"><a href="index.html" class="active">Home</a><a href="about.html" class="">About Us</a><a
+         <nav class="nav-links"><a href="index.html" class="">Home</a><a href="about.html" class="">About Us</a><a
                href="services.html" class="">Services</a><a href="projects.html" class="">Projects</a><a
                href="gallery.html" class="">Gallery</a><a href="emergency.html" class="">Emergency</a><a
-               href="contact.html" class="">Contact Us</a><a href="faq.html" class="">FAQ</a><a class="nav-cta"
+               href="contact.html" class="active">Contact Us</a><a href="faq.html" class="">FAQ</a><a class="nav-cta"
                href="quote.html">Get a Quote ↗</a></nav>
       </div>
    </header>
@@ -35,7 +33,7 @@
       <div class="hero-slide" style="background-image:url('images/plumbing.jpeg')"></div>
       <div class="hero-slide" style="background-image:url('images/irrigation.jpeg')"></div>
       <div class="container hero-content"><span class="eyebrow">AGOER plumbing Solutions</span>
-         <h1>Water solutions.<br>Beautifully delivered.</h1>
+         <h1 style="color: coral;">Water solutions.<br>Beautifully delivered.</h1>
          <p>From quality sanitary equipment to expert installation, repairs and complete water systems — bring comfort,
             confidence and elegance to every space.</p>
          <div class="hero-actions"><a class="btn btn-primary" href="quote.html">Request a Quote ↗</a><a
@@ -206,12 +204,15 @@
                <p>Working hours: 7:30am - 8:00pm Katoke Branch.</p>
             </div>
          </div>
-         <div class="copyright"><span>© <span data-year></span> AGOER Sanitary Store & Solutions. All rights
+         <div class="copyright"><span>© <span id="year"></span> AGOER Sanitary Store & Solutions. All rights
                reserved.</span><span>Experience Elegance.</span></div>
       </div>
+      
    </footer>
    <script src="assets/main.js"></script>
-
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 <div class="floating-social">
     <a href="https://facebook.com/" target="_blank" class="facebook" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>

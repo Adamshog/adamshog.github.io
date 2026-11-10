@@ -16,7 +16,7 @@
 <body>
    <div class="topbar">
       <div class="container"><span>Experience Elegance · Plumbing, water & sanitary solutions</span><span>Katoke: <a
-               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Nakasero: <a href="tel:+256763184269">+256763
+               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Sales: <a href="tel:+256763184269">+256763
                184269</a></span></div>
    </div>
    <header class="site-header">
@@ -27,12 +27,10 @@
          <nav class="nav-links"><a href="index.html" class="">Home</a><a href="about.html" class="">About Us</a><a
                href="services.html" class="">Services</a><a href="projects.html" class="">Projects</a><a
                href="gallery.html" class="">Gallery</a><a href="emergency.html" class="">Emergency</a><a
-               href="contact.html" class="">Contact Us</a><a href="faq.html" class="active">FAQ</a><a class="nav-cta"
+               href="contact.html" class="active">Contact Us</a><a href="faq.html" class="">FAQ</a><a class="nav-cta"
                href="quote.html">Get a Quote ↗</a></nav>
       </div>
    </header>
-
-
 <section class="page-hero" style="
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('images/images.jpg') center/cover no-repeat;
@@ -45,7 +43,7 @@
 "> 
       <div class="container">
          <div class="breadcrumbs"><a href="index.html">Home</a> / Frequently Asked Questions</div>
-         <h1>Frequently Asked Questions</h1>
+         <h1 style="color: coral;">Frequently Asked Questions</h1>
          <p>Quick answers about products, pricing, installations, repairs and contacting AGOER.</p>
       </div>
    </section>
@@ -139,12 +137,15 @@
                <p>Working hours: 7:30am - 8:00pm Katoke Branch.</p>
             </div>
          </div>
-         <div class="copyright"><span>© <span data-year></span> AGOER Sanitary Store & Solutions. All rights
+         <div class="copyright"><span>© <span id="year"></span> AGOER Sanitary Store & Solutions. All rights
                reserved.</span><span>Experience Elegance.</span></div>
       </div>
+      
    </footer>
    <script src="assets/main.js"></script>
-
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 <div class="floating-social">
     <a href="https://facebook.com/" target="_blank" class="facebook" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>

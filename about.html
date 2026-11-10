@@ -11,11 +11,10 @@
    <title>About Us | AGOER Sanitary Store & Solutions</title>
    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
    <div class="topbar">
       <div class="container"><span>Experience Elegance · Plumbing, water & sanitary solutions</span><span>Katoke: <a
-               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Nakasero: <a href="tel:+256763184269">+256763
+               href="tel:+256755775576">+256755 775576</a> &nbsp; | &nbsp; Sales: <a href="tel:+256763184269">+256763
                184269</a></span></div>
    </div>
    <header class="site-header">
@@ -23,19 +22,18 @@
                   src="images/AGOER-Logo-1 (2).png" style="width: 100px; height: auto;"></span><span><strong>AGOER
                   SANITARY</strong><small>STORE & SOLUTIONS</small></span></a><button class="menu-toggle"
             aria-label="Open menu" aria-expanded="false">☰</button>
-         <nav class="nav-links"><a href="index.html" class="">Home</a><a href="about.html" class="active">About Us</a><a
+         <nav class="nav-links"><a href="index.html" class="">Home</a><a href="about.html" class="">About Us</a><a
                href="services.html" class="">Services</a><a href="projects.html" class="">Projects</a><a
                href="gallery.html" class="">Gallery</a><a href="emergency.html" class="">Emergency</a><a
-               href="contact.html" class="">Contact Us</a><a href="faq.html" class="">FAQ</a><a class="nav-cta"
+               href="contact.html" class="active">Contact Us</a><a href="faq.html" class="">FAQ</a><a class="nav-cta"
                href="quote.html">Get a Quote ↗</a></nav>
       </div>
    </header>
-
 <section class="page-hero" style="
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('images/swimmingpool.jpg') center/cover no-repeat;
-    min-height: 500px;
-    display:flexbox;
+   min-height: 500px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -43,7 +41,7 @@
 "> 
       <div class="container">
          <div class="breadcrumbs"><a href="index.html">Home</a> / About AGOER</div>
-         <h1>About AGOER</h1>
+         <h1 style="color: coral;">About AGOER</h1>
          <p>A customer-focused sanitary store and solutions provider built around dependable products, thoughtful
             installation and lasting service.</p>
       </div>
@@ -184,15 +182,37 @@ To be creative, innovative and apply modern technologies that saves water and ob
                <p>Working hours: 7:30am - 8:00pm Katoke Branch.</p>
             </div>
          </div>
-         <div class="copyright"><span>© <span data-year></span> AGOER Plumbing solutios. All rights
+         <div class="copyright"><span>© <span id="year"></span> AGOER Sanitary Store & Solutions. All rights
                reserved.</span><span>Experience Elegance.</span></div>
       </div>
+      
    </footer>
-   <script src="assets/main.js"></script><div class="floating-social">
-    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+   <script src="assets/main.js"></script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<div class="floating-social">
+    <a href="https://facebook.com/" target="_blank" class="facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://wa.me/256787427563?text=Hello%20Agoer%20Plumbing%20Solution%2C%20I%20would%20like%20to%20inquire%20about%20your%20products%20and%20services." target="_blank" class="whatsapp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://instagram.com/" target="_blank" class="instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@agoersanitarystor" target="_blank" class="tiktok" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://youtube.com/@agoersanitarystoreandsolutions?si=sCcUNhiQX-JpyRlG" target="_blank" class="tiktok" aria-label="youtube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://x.com/" target="_blank" class="x" aria-label="x">
+        <i class="fab fa-x"></i>
+    </a>
 </div>
 
 </body>
