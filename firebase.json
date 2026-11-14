@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": ".",
+    "site": "agoerplumbingsolutions",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
