@@ -44,50 +44,6 @@ document
   .querySelectorAll("[data-year]")
   .forEach((el) => (el.textContent = new Date().getFullYear()));
 
-// const quoteButton = document.getElementById("quoteBtn");
-
-// quoteButton.addEventListener("click", async (e) => {
-//   e.preventDefault();
-
-//   const name = document.getElementById("name").value;
-//   const phone = document.getElementById("phone").value;
-//   const email = document.getElementById("email").value;
-//   const location = document.getElementById("location").value;
-//   const service = document.getElementById("service").value;
-//   const details = document.getElementById("details").value;
-
-//   try {
-//     const res = await fetch(
-//       "https://us-central1-incotech-projects.cloudfunctions.net/sendAgoerPlumbingSolutionsQuoteRequest",
-//       {
-//         method: "POST",
-//         body: JSON.stringify({
-//           name: name,
-//           phone: phone,
-//           email: email,
-//           location: location,
-//           service: service,
-//           details: details,
-//         }),
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//       }
-//     );
-
-//     if (res.status === 200) {
-//       console.log(res);
-
-//       alert("Quote request sent, we will get back to you shortly");
-//       return location.reload();
-//     }
-
-//     throw Error("Error");
-//   } catch (error) {
-//     return alert("Sorry, something went wrong");
-//   }
-// });
-
 const quoteButton = document.getElementById("quoteBtn");
 
 if (quoteButton) {
